@@ -18,12 +18,19 @@ body {
   font-family: Arial, san-serif;
   margin: 0px;
 }
-h1 {
+
+h1.tophead {
+  margin: 0px;
+  padding: 30px 10px;
   color: blue;
 }
 
-section {
-  margin-top: 30px;
+
+header {
+  /* border: 1px solid red; */
+  position: sticky;
+  top: 0;
+  background-color: gray;
 }
 
 /* Nav Bar Styling */
