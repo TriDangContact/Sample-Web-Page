@@ -9,31 +9,123 @@ Fall 2018
   COLOR PALLETE
   Dark Blue: #01549B
   Gold: #e6a91a
+  Light Gray: #3a3838
 */
 
 
-body {
-  font-size: 14pt;
-  color: black;
-  font-family: Arial, san-serif;
-  margin: 0px;
-}
-
-h1.tophead {
-  margin: 0px;
-  padding: 30px 10px;
-  color: blue;
-}
-
-
+/******** HEADER STYLING ********/
 header {
-  /* border: 1px solid red; */
-  position: sticky;
+  position: -webkit-sticky;  /* Safari compatibility*/
+  position: sticky;          /*have to test for IE and Edge, okay if page doesnt break, just need to explain it as a conscious decision*/
   top: 0;
-  background-color: gray;
 }
 
-/* Nav Bar Styling */
+div.top-head {
+  margin: 0px;
+  padding: 0px;
+  background-color: #e6a91a;
+}
+
+div.top-head img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+}
+
+/******** MAIN BODY CONTENT STYLING ********/
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Trebuchet MS", Helvetica, Arial, san-serif;
+  font-size: 14pt;
+  color: #3a3838;
+  line-height: 1.5;
+}
+
+h2.content-heading {
+  /* border: 1px solid red; */
+  margin: 0px;
+  color: #01549B
+}
+
+article.content-flex-container {
+  margin: 0px 35px;
+  padding: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+article.content-flex-container section {
+  /* border: 1px solid black; */
+  margin: 0px;
+  padding: 0px;
+  width: 30%;
+  text-align: left;
+}
+
+article.content-flex-container div.content-images {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: auto;
+  font-style: italic;
+}
+
+
+/******** EXHIBITS CONTENT STYLING ********/
+/* Create a flexbox that contains all the exhibits that is INSIDE a main flexbox*/
+
+h3.exhibits-heading {
+  /* border: 1px solid red; */
+  margin: 0px;
+  padding: 0px;
+  color: #3a3838;
+}
+
+h4 {
+  margin: 0px;
+  padding: 0px;
+  color: #3a3838;
+}
+
+/* Main flexbox, should only have 1 element */
+article.exhibits-container {
+  /* border: 1px solid blue; */
+  margin: 0px 35px;
+  padding: 20px;
+  display: block;
+  text-align: center;
+}
+
+/* Secondary flexbox that contains all the exhibits */
+article.exhibits-container section.exhibits-section-flex-container {
+  /* border: 1px solid black; */
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+/* Exhibits */
+article.exhibits-container section.exhibits-section-flex-container section{
+  /* border: 1px solid green; */
+  margin: 0px 15px;
+  padding: 0px;
+  width: 400px;
+  text-align: left;
+}
+
+article.exhibits-container section.exhibits-section-flex-container section div.exhibit-images {
+  /* border: 1px solid yellow; */
+  width: 100%;
+  height: auto;
+  font-style: italic;
+}
+
+
+/******** NAV BAR STYLING ********/
 nav {
   width: 100%;
   background-color: #01549B;
@@ -60,6 +152,7 @@ ul.headerNav li {
 }
 
 ul.headerNav li a {
+  margin: 0px;
   padding: 10px 10px;
   display: block;
   text-align: center;
@@ -82,7 +175,7 @@ ul.headerNav li a:hover, ul.headerNav li a:active {
 
 
 
-/* Footer Styling */
+/******** FOOTER STYLING ********/
 .footer-flex-container {
   color: white;
   background-color: #01549B;
@@ -110,6 +203,6 @@ ul.footerLink {
 
 .footer-flex-container a:hover, .footer-flex-container a:active {
   color: white;
-	background-color: #8692a8;
+	background-color: #e6a91a;
 	text-decoration: none;
 }
