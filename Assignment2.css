@@ -58,7 +58,7 @@ article.content-flex-container {
 }
 
 article.content-flex-container section {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: 0px 20px;
   padding: 0px;
   width: 400px;
@@ -72,6 +72,55 @@ article.content-flex-container div.content-images {
   font-style: italic;
 }
 
+/******** GET INOLVED CONTENT STYLING ********/
+article.involved-flex-container {
+  margin: 0px 35px;
+  padding: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+article.involved-flex-container section {
+  /* border: 1px solid black; */
+  margin: 0px 15px;
+  padding: 0px;
+  width: 40%;
+  text-align: left;
+}
+
+/*********NEWSLETTER FORM STYLING*********/
+input {
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  padding: 12px 10px;
+}
+
+input.text-form {
+  width: 50%;
+  size: 40;
+  box-sizing: border-box;
+}
+
+input#ageForm {
+  width: 15%;
+}
+
+select {
+  width: 15%;
+  height: 40px;
+  font-size: 16px;
+}
+
+input[type=submit], input[type=reset], input[type=button] {
+  margin: 15px;
+  width: 15%;
+  background-color: #01549B;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
 
 /******** EXHIBITS CONTENT STYLING ********/
 /* Create a main 1-column flexbox that contains a secondary 2-column flexbox  which contains all the exhibits*/
