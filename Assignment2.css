@@ -1,6 +1,6 @@
 /*
 Dang, Tri
-CS545_cssc0968 
+CS545_cssc0968
 Assignment #2
 Fall 2018
 */
@@ -54,14 +54,14 @@ article.content-flex-container {
   padding: 20px;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 article.content-flex-container section {
-  /* border: 1px solid black; */
-  margin: 0px;
+  border: 1px solid black;
+  margin: 0px 20px;
   padding: 0px;
-  width: 30%;
+  width: 400px;
   text-align: left;
 }
 
@@ -74,7 +74,7 @@ article.content-flex-container div.content-images {
 
 
 /******** EXHIBITS CONTENT STYLING ********/
-/* Create a flexbox that contains all the exhibits that is INSIDE a main flexbox*/
+/* Create a main 1-column flexbox that contains a secondary 2-column flexbox  which contains all the exhibits*/
 
 h3.exhibits-heading {
   /* border: 1px solid red; */
