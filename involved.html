@@ -13,9 +13,11 @@ Fall 2018
 </head>
 
 <body>
+
+<!-- SHARED HEADER AND NAVBAR ACROSS ALL PAGES -->
 <header>
   <div class="top-head">
-    <img src="images/logo.png" alt"">
+    <a href="index.html"><img src="images/logo.png" alt""></a>
   </div>
 
   <nav>
@@ -24,30 +26,62 @@ Fall 2018
     <li><a href="about.html">About Us</a></li>
     <li><a href="exhibits.html">Exhibits</a></li>
     <li><a href="events.html">Events</a></li>
-    <li><a href="science.html">Science</a></li>
     <li><a class="active" href="involved.html">Get Involved</a></li>
   </ul>
   </nav>
 </header>
+<!-- END OFSHARED HEADER AND NAVBAR ACROSS ALL PAGES -->
 
-
+<!-- MAIN CONTENT -->
 <article class="involved-flex-container">
   <section>
-    <h2 class="content-heading">Newsletter</h2>
-    <p>Receive the latest information about our new exhibitions, programs, events, and more.</p>
+    <h2 class="content-heading">Become a Member</h2>
+    <p>
+      It's the natural thing to do. <br>
+      Discover more. <br>
+      Experience more. <br>
+      And save more, every time you visit.
+    </p>
+    <div class="involved-images"><img src="images/people-listening.jpg" alt="Member Gathering" width="100%" height="100%"/></div>
+    <p>
+      We believe that nature is the biggest exhibition of all, and at the SDSU Natural History Museum, you can explore all that makes this region special.
+      Become a member today for a full year of discovery, and connect with a community of passionate science enthusiasts while enjoying access to outstanding exhibitions and programs. For nearly 145 years, we have been the storytellers of this incredibly diverse region we call home, and our members have been essential to that story every step of the way.
+      Join, renew, or give the gift of membership and visit The Museum all year long.
+    </p>
+    <h3>Benefits</h3>
+    <p>
+      Become a member and experience something new every time you visit, from docent-led fossil encounters to live animal demonstrations. Members get free general admission, guest passes, invitations to member-exclusive events, and more.
+    </p>
+    <h3>Join Now!</h3>
     <form class="newsletter-form" action="#" method="post">
+      <fieldset>
+        <legend>Account Information:</legend>
+        <label for="emailForm">Email:</label><br>
+        <input type="email" id="emailForm" name="email" class="text-form"  placeholder="example@domain.com" autocomplete="on" required><br>
+        <label for="passwordForm">Password:</label><br>
+        <input type="password" id="passwordForm" name="password" class="text-form" placeholder="Must be at least 7 characters" required>
+      </fieldset>
       <fieldset>
         <legend>Personal Information:</legend>
         <label for"firstNameForm">First Name:</label><br>
         <input type="text" id="firstNameForm" class="text-form" name="firstName" placeholder="First Name" autocomplete="on" required><br>
         <label for="lastNameForm">Last Name:</label><br>
         <input type="text" id="lastNameForm" class="text-form" name="lastName" placeholder="Last Name" autocomplete="on" required><br>
-        <label for="emailForm">Email:</label><br>
-        <input type="email" id="emailForm" name="email" class="text-form"  placeholder="example@domain.com" autocomplete="on" required><br>
+
+        <label for="address1Form">Street Address:</label> <br>
+        <input type="address" id="address1Form" class="text-form" name="address1" placeholder="1234 Home Ave." autocomplete="on" required><br>
+        <label for="address2Form">Apt/Suite:</label> <br>
+        <input type="address" id="address2Form" class="text-form" name="address2" placeholder="Apt #10"><br>
+        <label for="cityForm">City:</label><br>
+        <input type="text" id="cityForm" class="text-form" name="city" placeholder="City" autocomplete="on" required><br>
+        <label for="stateForm">State:</label><br>
+        <input type="text" id="stateForm" class="text-form" name="state" placeholder="State" autocomplete="on" required><br>
+        <label for="zipForm">Zip Code:</label><br>
+        <input type="number" id="zipForm" class="text-form" name="zipcode" placeholder="Zip Code" autocomplete="on" required><br>
       </fieldset>
 
       <fieldset>
-        <legend>Other Information:</legend>
+        <legend>Optional Information:</legend>
         <label for="ageForm">Age:</label><br>
         <input type="number" id="ageForm" class="text-form" name="age" placeholder="Age" min="0" max="130"><br>
         <label for="genderForm">Gender:</label><br>
@@ -63,18 +97,20 @@ Fall 2018
     </form>
   </section>
 
-  <section>
-    <h2 class="content-heading">Become a Member</h2>
-    <p>
-      Our purpose is to emphasize this unique and diverse region while maintaining a global perspective; to collect and preserve scientific specimens for research and as a continuous record of the changing world for future generations; to serve as a center for the scientific study of biological diversity and evolution; to provide dynamic leadership in natural history and environmental education through exhibits, publications, and educational programs, striving to make this outreach relevant to all the people of the San Diego region; to foster cooperative efforts in natural history research and education throughout our region.
-    </p>
-    <div class="content-images"><img src="images/stone-of-the-sun.jpg" alt="Stone of the Sun" width="100%" height="100%"/>Stone of the Sun</div>
-    <p>
-      We believe the San Diego State University Natural History Museum will be the premier collections-based environmental education and natural history research resource in our region. We will provide programs that are timely, user-friendly, and relevant to the real-life needs of the diverse populations of the San Diego-Baja California region today and tomorrow. We will train the researchers that will bring our history into the future.
-    </p>
+  <!-- SIDENAV FOR GET INOLVED PAGE -->
+  <section class="section-involved">
+    <nav>
+      <ul class="sidenav">
+        <li><a class="sidenav-active" href="involved.html">Join</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="newsletter.html">Newsletter</a></li>
+      </ul>
+    </nav>
   </section>
 </article>
+<!-- END OF MAIN CONTENT -->
 
+<!-- SHARED FOOTER ACROSS ALL PAGES -->
 <footer>
   <div class="footer-flex-container">
 
@@ -101,14 +137,15 @@ Fall 2018
   <div class="footerLink">
     <h3>Quick Links</h3>
     <p>
-      <a href="#">Donate<a> <br>
-      <a href="#">Join<a> <br>
-      <a href="#">Volunteer<a> <br>
+      <a href="involved.html">Join<a> <br>
+      <a href="donate.html">Donate<a> <br>
+      <a href="newsletter.html">Newsletter<a> <br>
     </p>
   </div>
 
   </div>
 </footer>
+<!-- END OF SHARED FOOTER ACROSS ALL PAGES -->
 
 </body>
 

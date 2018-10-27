@@ -33,147 +33,6 @@ div.top-head img {
   vertical-align: middle;
 }
 
-/******** MAIN BODY CONTENT STYLING ********/
-body {
-  margin: 0px;
-  padding: 0px;
-  font-family: "Trebuchet MS", Helvetica, Arial, san-serif;
-  font-size: 14pt;
-  color: #3a3838;
-  line-height: 1.5;
-}
-
-h2.content-heading {
-  /* border: 1px solid red; */
-  margin: 0px;
-  color: #01549B
-}
-
-article.content-flex-container {
-  margin: 0px 35px;
-  padding: 20px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-
-article.content-flex-container section {
-  /* border: 1px solid black; */
-  margin: 0px 20px;
-  padding: 0px;
-  width: 400px;
-  text-align: left;
-}
-
-article.content-flex-container div.content-images {
-  /* border: 1px solid red; */
-  width: 100%;
-  height: auto;
-  font-style: italic;
-}
-
-/******** GET INOLVED CONTENT STYLING ********/
-article.involved-flex-container {
-  margin: 0px 35px;
-  padding: 20px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-
-article.involved-flex-container section {
-  /* border: 1px solid black; */
-  margin: 0px 15px;
-  padding: 0px;
-  width: 40%;
-  text-align: left;
-}
-
-/*********NEWSLETTER FORM STYLING*********/
-input {
-  font-size: 16px;
-  border-radius: 5px;
-  border: 1px solid lightgray;
-  padding: 12px 10px;
-}
-
-input.text-form {
-  width: 50%;
-  size: 40;
-  box-sizing: border-box;
-}
-
-input#ageForm {
-  width: 15%;
-}
-
-select {
-  width: 15%;
-  height: 40px;
-  font-size: 16px;
-}
-
-input[type=submit], input[type=reset], input[type=button] {
-  margin: 15px;
-  width: 15%;
-  background-color: #01549B;
-  color: white;
-  text-align: center;
-  cursor: pointer;
-}
-
-/******** EXHIBITS CONTENT STYLING ********/
-/* Create a main 1-column flexbox that contains a secondary 2-column flexbox  which contains all the exhibits*/
-
-h3.exhibits-heading {
-  /* border: 1px solid red; */
-  margin: 0px;
-  padding: 0px;
-  color: #3a3838;
-}
-
-h4 {
-  margin: 0px;
-  padding: 0px;
-  color: #3a3838;
-}
-
-/* Main flexbox, should only have 1 element */
-article.exhibits-container {
-  /* border: 1px solid blue; */
-  margin: 0px 35px;
-  padding: 20px;
-  display: block;
-  text-align: center;
-}
-
-/* Secondary flexbox that contains all the exhibits */
-article.exhibits-container section.exhibits-section-flex-container {
-  /* border: 1px solid black; */
-  margin: 0px;
-  padding: 0px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-
-/* Exhibits */
-article.exhibits-container section.exhibits-section-flex-container section{
-  /* border: 1px solid green; */
-  margin: 0px 15px;
-  padding: 0px;
-  width: 400px;
-  text-align: left;
-}
-
-article.exhibits-container section.exhibits-section-flex-container section div.exhibit-images {
-  /* border: 1px solid yellow; */
-  width: 100%;
-  height: auto;
-  font-style: italic;
-}
-
-
 /******** NAV BAR STYLING ********/
 nav {
   width: 100%;
@@ -222,9 +81,218 @@ ul.headerNav li a:hover, ul.headerNav li a:active {
   background-color: #e6a91a;
 }
 
+/************* SIDE NAVBAR STYLING **************/
+section.section-involved nav {
+  width: 100%;
+  background-color: #01549B;
+  overflow: hidden;
+}
+
+nav ul.sidenav{
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+ul.sidenav li {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul.sidenav li a {
+  margin: 0px;
+  padding: 15px;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+ul.sidenav li:link, ul.sidenav li:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+ul.sidenav li:hover, ul.sidenav li:active {
+	background-color: #e6a91a;
+}
+
+.sidenav-active {
+  background-color: #e6a91a;
+}
 
 
-/******** FOOTER STYLING ********/
+
+/******** MAIN CONTENT STYLING ********/
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Trebuchet MS", Helvetica, Arial, san-serif;
+  font-size: 14pt;
+  color: #3a3838;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+h2.content-heading {
+  margin: 0px;
+  color: #01549B
+}
+
+article.content-flex-container {
+  margin: 0px 35px;
+  padding: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+article.content-flex-container section {
+  margin: 0px 20px;
+  padding: 0px;
+  min-width: 300px;
+  width: 25%;
+  text-align: left;
+}
+
+article.content-flex-container div.content-images {
+  width: 100%;
+  height: auto;
+  font-style: italic;
+}
+
+
+
+
+/******** GET INOLVED PAGE STYLING ********/
+/* Should be a 2-column layout, one for a big content area and another for sidenav */
+article.involved-flex-container {
+  margin: 0px 35px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+
+/* Should take up most of the container */
+article.involved-flex-container section {
+  margin: 0px 15px;
+  padding: 0px;
+  width: 800px;
+  text-align: left;
+}
+
+/* Styling for the sidenav of all GET INVOLVED pages, should only take up a small area of the container */
+article.involved-flex-container section.section-involved {
+  margin: 0px 15px;
+  padding: 0px;
+  min-width: 200px;
+  width: 15%;
+  text-align: left;
+}
+
+article.involved-flex-container section div.involved-images {
+  margin: 15px;
+  min-width: 300px;
+  width: 50%;
+  height: auto;
+  float: right;
+}
+
+
+
+/******** EXHIBITS CONTENT STYLING ********/
+/* Overrides MAIN CONTENT STYLING. Create a main 1-column flexbox that contains a secondary 3-column flexbox which contains all the exhibits*/
+h3.exhibits-heading {
+  margin: 0px;
+  padding: 0px;
+  color: #3a3838;
+}
+
+h4 {
+  margin: 0px;
+  padding: 0px;
+  color: #3a3838;
+}
+
+/* Main flexbox, should only have 1 element */
+article.exhibits-container {
+  margin: 0px 35px;
+  padding: 20px;
+  display: block;
+  text-align: center;
+}
+
+/* Secondary flexbox that contains all the exhibits */
+article.exhibits-container section.exhibits-section-flex-container {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+/* Styling for the individual exhibits */
+article.exhibits-container section.exhibits-section-flex-container section{
+  /* border: 1px solid black; */
+  margin: 0px 15px;
+  padding: 0px;
+  min-width: 300px;
+  width: 25%;
+  text-align: left;
+}
+
+/* Styling for the individual exhibits' images */
+article.exhibits-container section.exhibits-section-flex-container section div.exhibit-images {
+  width: 100%;
+  height: auto;
+  font-style: italic;
+}
+
+
+
+/*********SHARED FORM STYLING*********/
+input {
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  padding: 12px 10px;
+}
+
+input.text-form {
+  min-width: 300px;
+  width: 50%;
+  size: 40;
+  box-sizing: border-box;
+}
+
+input#ageForm, input#stateForm, input#zipForm {
+  min-width: 100px;
+  width: 15%;
+}
+
+select {
+  min-width: 100px;
+  width: 15%;
+  height: 40px;
+  font-size: 16px;
+}
+
+input[type=submit], input[type=reset], input[type=button] {
+  margin: 15px;
+  min-width: 100px;
+  width: 15%;
+  background-color: #01549B;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+
+/******** SHARED FOOTER STYLING ********/
 .footer-flex-container {
   color: white;
   background-color: #01549B;
@@ -236,6 +304,7 @@ ul.headerNav li a:hover, ul.headerNav li a:active {
 }
 
 .footer-flex-container div{
+  min-width: 200px;
   width: 33%;
   text-align: center;
   padding: 0px 0px 30px 0px;
